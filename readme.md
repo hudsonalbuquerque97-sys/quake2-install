@@ -151,7 +151,7 @@ GDBus.Error:org.freedesktop.PolicyKit1.Error.Failed: No session for cookie
 Depois de instalar os dados, é só rodar:
 
 ```bash
-yamagi-quake2
+quake2
 ```
 
 ### Jogar as expansões e mods
@@ -159,13 +159,13 @@ yamagi-quake2
 Se você instalou as expansões, pode jogá-las assim:
 
 ```bash
-yamagi-quake2                      # Jogo base
-yamagi-quake2 +set game xatrix     # Mission Pack 1: The Reckoning
-yamagi-quake2 +set game rogue      # Mission Pack 2: Ground Zero
-yamagi-quake2 +set game zaero      # Zaero
-yamagi-quake2 +set game jugger     # Juggernaut
-yamagi-quake2 +set game smd        # Slight Mechanical Destruction
-yamagi-quake2 +set game ctf        # Capture The Flag
+quake2                      # Jogo base
+quake2 +set game xatrix     # Mission Pack 1: The Reckoning
+quake2 +set game rogue      # Mission Pack 2: Ground Zero
+quake2 +set game zaero      # Zaero
+quake2 +set game jugger     # Juggernaut
+quake2 +set game smd        # Slight Mechanical Destruction
+quake2 +set game ctf        # Capture The Flag
 ```
 
 ---
