@@ -4,6 +4,17 @@ Um script automatizado para instalar o Yamagi Quake 2 no Linux Mint 22.1+ e Ubun
 
 ---
 
+## ✅ Por que este script é legal?
+- Yamagi Quake 2: GPL (código aberto)
+- game-data-packager: Software livre Debian
+- Não distribui arquivos proprietários
+- Requer posse legal do jogo original
+
+## ⚠️ Aviso Legal
+Este script **NÃO distribui** o jogo Quake 2.
+Você precisa possuir uma cópia legal do jogo (Steam, GOG ou CD original).
+O script apenas instala as ferramentas para jogar no Linux.
+
 ## 📦 O que este script faz?
 
 O script instala três componentes essenciais:
@@ -235,6 +246,7 @@ Quando você roda o game-data-packager, ele cria vários pacotes `.deb`:
 Agora você tem tudo pronto para jogar Quake 2 no Linux como deveria ser jogado - nativo e sem emulação!
 
 **Dica:** Use `yamagi-quake2 +set vid_fullscreen 0` para jogar em modo janela.
+
 
 ---
 
