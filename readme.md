@@ -108,13 +108,16 @@ O **game-data-packager** frequentemente apresenta erro ao tentar instalar os pac
 # 1. Instale o innoextract
 sudo apt install innoextract
 
-# 2. Extraia o instalador
+# 2. entre no diretorio
+cd ~/diretorio/onde/está/pasta/dos/arquivos/do/jogo
+
+# 3.Extraia o instalador
 innoextract setup_quake2_*.exe
 
-# 3. Gere os pacotes .deb (SEM instalar automaticamente - use -d)
-game-data-packager -d ~/ quake2 ./app/
+# 4. Gere os pacotes .deb (SEM instalar automaticamente - use -n)
+game-data-packager -n quake2 
 
-# 4. Instale os pacotes gerados MANUALMENTE
+# 5. Instale os pacotes gerados MANUALMENTE
 sudo dpkg -i ~/quake2*.deb
 ```
 
@@ -122,8 +125,8 @@ sudo dpkg -i ~/quake2*.deb
 
 ```bash
 # Se os arquivos estão em uma pasta específica
-# SEMPRE use -d para gerar sem instalar automaticamente
-game-data-packager -d ~/ quake2 /caminho/para/pasta/com/baseq2/
+# SEMPRE use -n para gerar sem instalar automaticamente
+game-data-packager -n ~/ quake2 /caminho/para/pasta/com/baseq2/
 
 # Depois instale os pacotes MANUALMENTE
 sudo dpkg -i ~/quake2*.deb
@@ -133,14 +136,14 @@ sudo dpkg -i ~/quake2*.deb
 
 ```bash
 # Os arquivos geralmente estão aqui:
-# Use -d para evitar erro de instalação automática
-game-data-packager -d ~/ quake2 ~/.steam/steam/steamapps/common/Quake\ 2/
+# Use -n para evitar erro de instalação automática
+game-data-packager -n ~/ quake2 ~/.steam/steam/steamapps/common/Quake\ 2/
 
 # Depois instale MANUALMENTE
 sudo dpkg -i ~/quake2*.deb
 ```
 
-### 💡 Por que sempre usar -d e instalar manualmente?
+### 💡 Por que sempre usar -n e instalar manualmente?
 
 O `game-data-packager` tenta instalar automaticamente usando `pkexec`, mas isso geralmente falha com o erro:
 
@@ -151,7 +154,7 @@ GDBus.Error:org.freedesktop.PolicyKit1.Error.Failed: No session for cookie
 ```
 
 **Solução definitiva:** 
-1. Use sempre a flag `-d ~/` para gerar os pacotes na sua pasta home
+1. Use sempre a flag `-n ~/` para gerar os pacotes na sua pasta home
 2. Instale manualmente com `sudo dpkg -i ~/quake2*.deb`
 3. Pronto! Funciona perfeitamente.
 
