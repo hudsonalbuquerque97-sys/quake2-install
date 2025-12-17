@@ -100,7 +100,7 @@ Você precisa dos arquivos originais do Quake 2. Eles podem vir de:
 
 O **game-data-packager** frequentemente apresenta erro ao tentar instalar os pacotes automaticamente (erro com `pkexec`/`polkit`). 
 
-**Solução:** Use a flag `-d` para gerar os pacotes sem tentar instalá-los, e depois instale manualmente com `sudo dpkg -i`.
+**Solução:** Use a flag `-n` para gerar os pacotes sem tentar instalá-los, e depois instale manualmente com `sudo dpkg -i`.
 
 ### Opção 1: Se você tem um instalador .exe (GOG)
 
